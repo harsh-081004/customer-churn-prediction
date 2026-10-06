@@ -44,9 +44,6 @@ env/
 
 # Project Specific Data & Outputs
 # We ignore raw data and output artifacts to keep the git repo light.
-data/*.csv
-result/*.csv
-result/*.png
 exports/*.csv
 exports/*.png
 /tmp/

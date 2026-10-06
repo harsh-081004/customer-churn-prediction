@@ -1,0 +1,6 @@
+metric,tenure,MonthlyCharges,TotalCharges
+count,7043.0,7043.0,7043.0
+mean,32.37,64.76,2283.3
+std,24.55,30.09,2265.0
+min,0.0,18.25,18.8
+max,72.0,118.75,8684.8

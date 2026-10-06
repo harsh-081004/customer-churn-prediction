@@ -1,0 +1,4 @@
+model,accuracy,f1_score,auc_roc
+Logistic Regression,0.803,0.791,0.831
+Random Forest,0.805,0.793,0.836
+GBT Classifier,0.787,0.776,0.828
