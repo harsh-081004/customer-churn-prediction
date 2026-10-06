@@ -1,0 +1,23 @@
+# HBase Shell Commands for Customer Churn Risk Profiles
+
+# 1. Start the HBase shell
+# > hbase shell
+
+# 2. Create the table 'customer_risk_profile' with a column family 'risk_data'
+create 'customer_risk_profile', 'risk_data'
+
+# 3. Example of how Spark would write a prediction for Customer "7590-VHVEG"
+# RowKey: customer_id
+# Column Family: risk_data
+put 'customer_risk_profile', '7590-VHVEG', 'risk_data:churn_prediction', 'Yes'
+put 'customer_risk_profile', '7590-VHVEG', 'risk_data:risk_score', '0.89'
+put 'customer_risk_profile', '7590-VHVEG', 'risk_data:contract_type', 'Month-to-month'
+
+# 4. Instant Real-time Lookup (This is what the Web App / Dashboard does)
+get 'customer_risk_profile', '7590-VHVEG'
+
+# Output looks like:
+# COLUMN                               CELL
+#  risk_data:churn_prediction          timestamp=1697204910123, value=Yes
+#  risk_data:contract_type             timestamp=1697204910123, value=Month-to-month
+#  risk_data:risk_score                timestamp=1697204910123, value=0.89

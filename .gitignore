@@ -1,0 +1,66 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific Data & Outputs
+# We ignore raw data and output artifacts to keep the git repo light.
+data/*.csv
+result/*.csv
+result/*.png
+exports/*.csv
+exports/*.png
+/tmp/
+
+# Airflow
+airflow/logs/
+airflow/airflow-webserver.pid
+airflow/airflow-webserver.err
+airflow/airflow-webserver.out
+airflow/airflow.cfg
+airflow/webserver_config.py
+airflow/standaloneargs.py
+airflow/*.db
+airflow/*.pid
+
+# Logs
+*.log
